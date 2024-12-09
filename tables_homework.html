@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #d3d3d3;
+        }
+        caption {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!--List of Participants-->
+    <table border="1" >
+        <caption>List of Participants</caption>
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">lastname</th>
+            <th scope="col">emile</th>
+        </tr>
+        <tr>
+            <td>ვაჟა</td>
+            <td>ზოიძე</td>
+            <td>asd@mail.ru</td>
+        </tr>
+        <tr>
+            <td>ვაჟა</td>
+            <td>ზოიძე</td>
+            <td>asd@mail.ru</td>
+        </tr>
+        <tr>
+            <td>ვაჟა</td>
+            <td>ზოიძე</td>
+            <td>asd@mail.ru</td>
+        </tr>
+        <tr>
+            <td>ვაჟა</td>
+            <td>ზოიძე</td>
+            <td>asd@mail.ru</td>
+        </tr>
+        <tr>
+            <td>ვაჟა</td>
+            <td>ზოიძე</td>
+            <td>asd@mail.ru</td>
+        </tr>
+
+    </table>
+    <!--weekly schedule-->
+        <table role="table">
+            <caption>shopping cart table</caption>
+            <thead role="rowgroup">
+                <tr role="row">
+                    <th  role="columnheader" id="Name">Name</th>
+                    <th  role="columnheader" id="Quality">Quality</th>
+                    <th  role="columnheader" id="Price-per-Item">Price per Item</th>
+                    <th  role="columnheader" id="total-price">Total price</th>
+                </tr>
+            </thead>
+            <tbody role="rowgroup">
+                <tr>
+                    <td role="cell" headers="Item">Apple</td>
+                    <td role="cell" headers="Quality">3</td>
+                    <td role="cell" headers="Price-per-Item">2.0$</td>
+                    <td role="cell" headers="total">6.0$</td>
+                </tr>
+                <tr>
+                    <td role="cell" headers="Item">Apple</td>
+                    <td role="cell" headers="Quality">3</td>
+                    <td role="cell" headers="Price-per-Item">2.0$</td>
+                    <td role="cell" headers="total">6.0$</td>
+                </tr>
+                <tr>
+                    <td role="cell" headers="Item">Apple</td>
+                    <td role="cell" headers="Quality">3</td>
+                    <td role="cell" headers="Price-per-Item">2.0$</td>
+                    <td role="cell" headers="total">6.0$</td>
+                </tr>
+                <tr>
+                    <td role="cell" headers="Item">Apple</td>
+                    <td role="cell" headers="Quality">3</td>
+                    <td role="cell" headers="Price-per-Item">2.0$</td>
+                    <td role="cell" headers="total">6.0$</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th role="cell" colspan="3">total price</th>
+                    <th role="cell">24$</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Weekly Activity Schedule -->
+        <table>
+            <caption>Weekly Activity Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Time Slot</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Morning</td>
+                    <td colspan="3">Team Meeting</td>
+                    <td>Yoga Class</td>
+                    <td>Yoga Class</td>
+                    <td>Yoga Class</td>
+                    <td>Yoga Class</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Available</td>
+                    <td>Available</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Workout</td>
+                    <td colspan="2">Reading</td>
+                    <td>Cooking</td>
+                    <td>Gardening</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Afternoon</td>
+                    <td>Project Work</td>
+                    <td colspan="2">Client Call</td>
+                    <td>Study</td>
+                    <td>Study</td>
+                    <td>Relaxation</td>
+                    <td>Relaxation</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Lunch Break</td>
+                    <td colspan="2">Team Building</td>
+                    <td>Sports</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td>Workshop</td>
+                    <td colspan="2">Planning</td>
+                    <td>Available</td>
+                    <td>Available</td>
+                    <td>Hobby</td>
+                    <td>Hobby</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Evening</td>
+                    <td>Family Time</td>
+                    <td colspan="2">Movie Night</td>
+                    <td>Exercise</td>
+                    <td>Exercise</td>
+                    <td>Game Night</td>
+                    <td>Game Night</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Dinner</td>
+                    <td colspan="2">Socializing</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                    <td>TV Show</td>
+                    <td colspan="2">Relaxation</td>
+                    <td>Planning</td>
+                    <td>Planning</td>
+                </tr>
+            </tbody>
+        </table>
+
+           <!-- Shopping Cart Table with Nested Details Table -->
+    <table border="1" style="border-collapse: collapse; width: 80%; margin-bottom: 20px;">
+        <caption>Shopping Cart</caption>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Phone</td>
+                <td>1</td>
+                <td>$699</td>
+                <td>
+                    <table border="1" style="border-collapse: collapse; width: 100%;">
+                        <tr>
+                            <th>Brand</th>
+                            <th>Weight</th>
+                            <th>Warranty</th>
+                        </tr>
+                        <tr>
+                            <td>XYZ</td>
+                            <td>200g</td>
+                            <td>2 years</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>1</td>
+                <td>$1200</td>
+                <td>
+                    <table border="1" style="border-collapse: collapse; width: 100%;">
+                        <tr>
+                            <th>Brand</th>
+                            <th>Weight</th>
+                            <th>Warranty</th>
+                        </tr>
+                        <tr>
+                            <td>ABC</td>
+                            <td>1.5kg</td>
+                            <td>1 year</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: #f2f2f2; font-weight: bold;">
+                <td colspan="2">Total</td>
+                <td colspan="2">$1899</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Calendar Table for the Current Month -->
+    <table border="1" style="border-collapse: collapse; width: 60%;">
+        <caption>December 2024 Calendar</caption>
+        <thead>
+            <tr>
+                <th headers="day-sun">Sun</th>
+                <th headers="day-mon">Mon</th>
+                <th headers="day-tue">Tue</th>
+                <th headers="day-wed">Wed</th>
+                <th headers="day-thu">Thu</th>
+                <th headers="day-fri">Fri</th>
+                <th headers="day-sat">Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: #d9ead3;">
+                <td colspan="7" style="text-align: center;">Have a great month!</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    
+</body>
+</html>
